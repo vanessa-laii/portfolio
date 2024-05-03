@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import { AuroraBackground } from '@/components/ui/aurora-background';
-import Graphic from './components/Graphic';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
