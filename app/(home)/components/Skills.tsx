@@ -2,7 +2,8 @@
 import React from 'react';
 import Title from './Title';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
-import { SiGit, SiNextdotjs, SiReact, SiTailwindcss } from 'react-icons/si';
+import { SiC, SiFigma, SiGit, SiJavascript, SiNextdotjs, SiPython, SiReact, SiSqlite, SiTailwindcss } from 'react-icons/si';
+import { FaJava } from "react-icons/fa6";
 
 export default function Skills() {
     const skills = [
@@ -22,6 +23,26 @@ export default function Skills() {
         text: "Git",
         Icon: SiGit,
     },
+    {
+        text: "Python",
+        Icon: SiPython,
+    },
+    {
+        text: "C",
+        Icon: SiC,
+    },
+    {
+        text: "Figma",
+        Icon: SiFigma,
+    },
+    {
+        text: "Java",
+        Icon: FaJava,
+    }, 
+    {
+        text: "SQL",
+        Icon: SiSqlite,
+    }
     ]
 
     return(
