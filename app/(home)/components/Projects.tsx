@@ -1,9 +1,10 @@
 import React from 'react';
-import { SiFigma, SiFirebase, SiPython, SiSqlite } from 'react-icons/si';
+import { SiFigma, SiFirebase, SiGit, SiJavascript, SiPython, SiSqlite } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 import { cn } from '@/lib/utils';
+import { FaJava } from 'react-icons/fa6';
 
 
 export default function Projects() {
@@ -15,6 +16,20 @@ export default function Projects() {
         cover: "/BizConnect.png",
         background: "bg-indigo-100"
 
+    },
+    {
+        title: "WaterFilter Identifier (MacWater)",
+        tech: [SiFigma, SiJavascript, SiGit, SiFirebase],
+        link: "https://github.com/harmanpreet-sagar/MacWater",
+        cover: "/MacWater.png",
+        background: "bg-indigo-100"
+    },
+    {
+        title: "Maze Solver",
+        tech: [SiGit, FaJava],
+        link: "https://github.com/vanessa-laii/a1-maze-runner-vanessa-laii",
+        cover: "/maze.jpg",
+        background: "bg-indigo-100"
     }
     ];
     return (
