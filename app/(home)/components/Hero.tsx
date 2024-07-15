@@ -6,15 +6,15 @@ import Graphic from './Graphic';
 
 export default function Hero() {
   return (
-    <div className="min-h-[60vh] flex flex-col-reverse lg:flex-row gap-15 lg:gap-0 items-center justify-between px-5" animation-move-up> {/* Added px-5 for padding */}
-      <div className="space-y-10 text-center lg:text-left"> {/* Adjusted text alignment for larger screens */}
+    <div className="min-h-[60vh] flex flex-col-reverse lg:flex-row gap-15 lg:gap-0 items-center justify-between px-5" animation-move-up> 
+      <div className="space-y-10 text-center lg:text-left"> 
         <h1 className="text-4xl lg:text-7xl font-bold">
           Hi there!✌🏻 
           <br/> <span className="underline underline-offset-8 decoration-green-200">{"I'm Vanessa"}</span> 
         </h1>
 
-        <p className="md:w-96 text-lg"> {/* Removed text color class */}
-          {"Software Engineering Student at McMaster University. I'm passionate about designing for accessibility!"}
+        <p className="md:w-96 text-lg"> 
+          {"Software Engineering Student. I'm passionate about engineering for accessibility through innovation and design!"}
         </p>
 
         <Link href={"mailto:laiv3@mcmaster.ca"} className="inline-block">
@@ -25,10 +25,9 @@ export default function Hero() {
         <div className="space-y-3 right-0 relative flex justify-left items-left w-full lg:w-auto">
           <Graphic />
         </div>
-        {/* Button container */}
         <div className="absolute right-5 top-20">
           <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
-            <p>⊹ Looking for Co-op ⊹</p>
+            <p>⊹ McMaster University ⊹</p>
           </MovingBorderBtn>
         </div>
       </div>

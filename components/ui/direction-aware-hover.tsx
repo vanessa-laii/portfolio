@@ -11,12 +11,16 @@ export const DirectionAwareHover = ({
   childrenClassName,
   imageClassName,
   className,
+  width = 300, // Default width
+  height = 300, // Default height
 }: {
   imageUrl: string;
   children: React.ReactNode | string;
   childrenClassName?: string;
   imageClassName?: string;
   className?: string;
+  width?: number;
+  height?: number;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -69,6 +73,7 @@ export const DirectionAwareHover = ({
         "bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
+      style={{ width: `${width}px`, height: `${height}px` }} // Set the size of the parent container
     >
       <AnimatePresence mode="wait">
         <motion.div
@@ -92,8 +97,8 @@ export const DirectionAwareHover = ({
                 "h-full w-full object-cover scale-[1.10]",
                 imageClassName
               )}
-              width="1000"
-              height="1000"
+              width={width} // Set the image width
+              height={height} // Set the image height
               src={imageUrl}
             />
           </motion.div>
