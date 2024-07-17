@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
 
         <p className="md:w-96 text-lg"> 
-          {"Software Engineering Student. I'm passionate about engineering for accessibility through innovation and design!"}
+          {"Software Engineering Student at McMaster Univeristy. I'm passionate about engineering for accessibility through innovation and design!"}
         </p>
 
         <Link href={"mailto:laiv3@mcmaster.ca"} className="inline-block">
@@ -26,9 +26,11 @@ export default function Hero() {
           <Graphic />
         </div>
         <div className="absolute right-5 top-20">
-          <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
-            <p>⊹ McMaster University ⊹</p>
-          </MovingBorderBtn>
+          <Link href={"https://drive.google.com/file/d/1eeheJpYpgqqH3qso_i4UkV8CJQmNa375/view?usp=sharing"}>
+            <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
+              <p>⊹ My Resume ⊹</p>
+            </MovingBorderBtn>
+          </Link>
         </div>
       </div>
     </div>
