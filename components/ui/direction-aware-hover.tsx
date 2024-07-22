@@ -73,7 +73,7 @@ export const DirectionAwareHover = ({
         "bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
-      style={{ width: `${width}px`, height: `${height}px` }} // Set the size of the parent container
+      style={{ width: "100%", height: "auto" }} // Make the parent container responsive
     >
       <AnimatePresence mode="wait">
         <motion.div
@@ -91,16 +91,19 @@ export const DirectionAwareHover = ({
               ease: "easeOut",
             }}
           >
-            <Image
-              alt="image"
-              className={cn(
-                "h-full w-full object-cover scale-[1.10]",
-                imageClassName
-              )}
-              width={width} // Set the image width
-              height={height} // Set the image height
-              src={imageUrl}
-            />
+            <div className="relative h-full w-full">
+              <Image
+                alt="image"
+                className={cn(
+                  "h-full w-full object-cover scale-[1.10]",
+                  imageClassName
+                )}
+                layout="responsive"
+                width={width}
+                height={height}
+                src={imageUrl}
+              />
+            </div>
           </motion.div>
           <motion.div
             variants={textVariants}
@@ -125,7 +128,6 @@ const variants = {
   initial: {
     x: 0,
   },
-
   exit: {
     x: 0,
     y: 0,

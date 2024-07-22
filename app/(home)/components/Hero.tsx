@@ -26,7 +26,7 @@ export default function Hero() {
           <Graphic />
         </div>
         <div className="absolute right-5 top-20">
-          <Link href={"https://drive.google.com/file/d/1eeheJpYpgqqH3qso_i4UkV8CJQmNa375/view?usp=sharing"}>
+          <Link href={"https://drive.google.com/file/d/1u5rZD-lbzy0M4azHsZtnum2_2_ZMNMXH/view?usp=sharing"}>
             <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
               <p>⊹ My Resume ⊹</p>
             </MovingBorderBtn>
