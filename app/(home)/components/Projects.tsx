@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiFigma, SiFirebase, SiGit, SiJavascript, SiPython, SiShadcnui, SiSqlite, SiTailwindcss, SiVercel } from 'react-icons/si';
+import { SiFigma, SiFirebase, SiFlask, SiGit, SiJavascript, SiPython, SiShadcnui, SiSpotify, SiSqlite, SiTailwindcss, SiVercel } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
@@ -8,6 +8,13 @@ import { FaJava } from 'react-icons/fa6';
 
 export default function Projects() {
     const projects = [
+        {
+            title: "Spotify Stats",
+            tech: [SiPython, SiFlask, SiSpotify],
+            link: "https://github.com/vanessa-laii/spotify-stats",
+            cover: "/Spotify.jpg",
+            background: "bg-indigo-100"
+        },
         {
             title: "McMaster iGEM Personal Website",
             tech: [SiJavascript, SiTailwindcss, SiVercel, SiGit, SiShadcnui],
@@ -35,20 +42,21 @@ export default function Projects() {
             link: "https://github.com/vanessa-laii/a1-maze-runner-vanessa-laii",
             cover: "/maze.jpg",
             background: "bg-indigo-100"
-        }
+        },
+        
     ];
     return (
         <div className="py-10 p-5 sm:p-0">
             <Title text="Projects ⚒️" className="flex flex-col items-center justify-center" />
-            <div className="grid grid-cols-1 md:grid-cols-2 pt-20 gap-5">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 pt-20 gap-5">
                 {projects.map((project, index) => (
                     <Link href={project.link} key={index}>
                         <div className={cn("p-5 rounded-md", project.background)}>
                             <DirectionAwareHover 
                                 imageUrl={project.cover} 
                                 className="w-full space-y-5 cursor-pointer" 
-                                width={550} // Default width
-                                height={400} // Default height
+                                width={800} 
+                                height={600} 
                             >
                                 <div className="space-y-5">
                                     <h1 className="text-2xl font-bold">{project.title}</h1>

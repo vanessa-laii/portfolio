@@ -2,7 +2,7 @@
 import React from 'react';
 import Title from './Title';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
-import { SiC, SiFigma, SiGit, SiJavascript, SiNextdotjs, SiPython, SiReact, SiSqlite, SiTailwindcss } from 'react-icons/si';
+import { SiC, SiFigma, SiFlask, SiGit, SiJavascript, SiNextdotjs, SiPython, SiReact, SiSqlite, SiTailwindcss } from 'react-icons/si';
 import { FaJava } from "react-icons/fa6";
 
 export default function Skills() {
@@ -42,6 +42,10 @@ export default function Skills() {
     {
         text: "SQL",
         Icon: SiSqlite,
+    }, 
+    {
+        text: "Flask",
+        Icon: SiFlask,
     }
     ]
 

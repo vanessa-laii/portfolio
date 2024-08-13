@@ -11,8 +11,8 @@ export const DirectionAwareHover = ({
   childrenClassName,
   imageClassName,
   className,
-  width = 300, // Default width
-  height = 300, // Default height
+  width = 600, // Default width
+  height = 600, // Default height
 }: {
   imageUrl: string;
   children: React.ReactNode | string;
@@ -73,7 +73,7 @@ export const DirectionAwareHover = ({
         "bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
-      style={{ width: "100%", height: "auto" }} // Make the parent container responsive
+      style={{ width: "100%", height: "100%" }} // Adjust the parent container to fill the available space
     >
       <AnimatePresence mode="wait">
         <motion.div
@@ -85,25 +85,22 @@ export const DirectionAwareHover = ({
           <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-full bg-black/40 z-10 transition duration-500" />
           <motion.div
             variants={variants}
-            className="h-full w-full relative bg-gray-50 dark:bg-black"
+            className="h-full w-full relative"
             transition={{
               duration: 0.2,
               ease: "easeOut",
             }}
           >
-            <div className="relative h-full w-full">
-              <Image
-                alt="image"
-                className={cn(
-                  "h-full w-full object-cover scale-[1.10]",
-                  imageClassName
-                )}
-                layout="responsive"
-                width={width}
-                height={height}
-                src={imageUrl}
-              />
-            </div>
+            <Image
+              alt="image"
+              className={cn(
+                "object-cover w-96 h-80", // Ensure the image fills the container and maintains aspect ratio
+                imageClassName
+              )}
+              width={width}
+              height={height}
+              src={imageUrl}
+            />
           </motion.div>
           <motion.div
             variants={textVariants}
