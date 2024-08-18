@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
 
         <p className="md:w-96 text-lg"> 
-          {"Software Engineering Student at McMaster Univeristy. I'm passionate about engineering for accessibility through innovation and design!"}
+          {"Software Engineering Student at McMaster University. I'm passionate about engineering for accessibility through innovation and design!"}
         </p>
 
         <Link href={"mailto:laiv3@mcmaster.ca"} className="inline-block">
