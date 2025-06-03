@@ -17,7 +17,6 @@ const Page = () => {
                   <Hero />
                   <div className=" max-w-7xl mx-auto p-5 mt-20">
                     <Projects />
-                    <Skills />
                     <Footer />
                   </div>
                 </div>

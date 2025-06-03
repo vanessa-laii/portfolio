@@ -29,13 +29,11 @@ const DeltaHacks = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        DeltaHacks 9 Hackathon 
+        DeltaHacks 9 McMaster 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+        Won 1st place 
       </p>
     </div>
   );
@@ -48,7 +46,7 @@ const CodingInstructor = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Developed and delivered lesson plans teaching ELM and front-end programming to over 200 elementary students in the Summer Workshops, delivering sessions in English and French.
+        Delivered lesson plans teaching front-end programming to over 200 elementary students in the Summer Workshops, delivering sessions in English and French.
       </p>
     </div>
   );
@@ -61,8 +59,7 @@ const BatteryChallenge = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        McMaster BWF is a 3-year student competition to design, build, test and integrate an 
-        EV battery pack into a Stellantis brand vehicle. My responsibilities were to design the coulomb counting 
+        3 year EV battery challenge across North America! My responsibilities were to design the coulomb counting 
         algorithm for battery State of Charge estimation.
       </p>
     </div>
