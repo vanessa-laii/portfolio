@@ -8,7 +8,7 @@ export default function Title({text, className}: {text:string, className?:string
                         {text}
                     </h1>
                     <div className="w-40 h-2 bg-green-200 rounded-full"></div>
-                    <div className="w-40 h-2 bg-indigo-100 rounded-full translate-x-2"></div>
+                    <div className="w-40 h-2 bg-purple-100 rounded-full translate-x-2"></div>
                 </div>
         </div>
     )

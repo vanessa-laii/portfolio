@@ -9,21 +9,15 @@ import Footer from './components/Footer';
 const Page = () => {
   return (
     <div>
-
-          <div className="min-h-screen overflow-hidden flex flex-col"> 
-              <div className="dark:bg-white relative flex-grow">
-                <div className="max-w-7xl mx-auto p-5 h-full"> 
-                  <Navbar />
-                  <Hero />
-                  <div className=" max-w-7xl mx-auto p-5 mt-20">
-                    <Projects />
-                    <Footer />
-                  </div>
-                </div>
-              </div>
+          <div className="max-w-full px-10"> 
+            <Navbar />
+            <div className=" max-w-7xl mx-auto p-5 mt-20">
+              <Hero />
+              
+              <Footer />
+            </div>
           </div>
     </div>
-
 
   );
 }

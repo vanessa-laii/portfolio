@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import { cn } from "@/lib/utils";
 
 export default function Navbar({className}:{className?:string}){
@@ -10,28 +10,33 @@ export default function Navbar({className}:{className?:string}){
             label: "Linkedin", 
             Icon: SiLinkedin
         },
-
         {
             link: "https://github.com/vanessa-laii",
             label: "Github",
             Icon: SiGithub
+        }, 
+        {
+            link: "mailto:laiv3@mcmaster.ca",
+            label: "Email", 
+            Icon: SiGmail
         }
-
     ];
 
     return (
-        <nav className={cn(" py-10 flex justify-between items-center animate-move-down", className)}>
-            <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-200 -rotate-2">Vanessa Lai ⌨️</h1>
+        <nav className={cn("w-full py-10 animate-move-down", className)}>
+          <div className="flex items-center justify-between w-full">
+            <h1 className="text-2xl font-bold">vanessa lai ❀</h1>
             <div className="flex items-center gap-5">
-                {socials.map((social,index)=>{
-
-                    const Icon = social.Icon
-                    return <a href={social.link} key={index} aria-Label={social.label}>
-                        <Icon className= "w-5 h-5 hover:scale-125 transition-all"/>
-                    </a>
-
-                })}
+              {socials.map((social,index)=>{
+                const Icon = social.Icon
+                return (
+                  <a href={social.link} key={index} aria-label={social.label}>
+                    <Icon className="w-5 h-5 hover:scale-125 transition-all"/>
+                  </a>
+                )
+              })}
             </div> 
+          </div>
         </nav>
     );
 }
