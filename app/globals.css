@@ -72,9 +72,15 @@
     }
     body {
       @apply bg-background text-foreground;
-      cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><text x='8' y='22' font-size='18'>❀</text></svg>") 16 16, auto;
     }
   }
+
+  *,
+*:hover,
+*:focus,
+*:active {
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><text x='8' y='22' font-size='18'>❀</text></svg>") 16 16, auto;
+}
 
   .glow{
       width: 0px;
