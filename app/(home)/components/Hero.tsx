@@ -20,7 +20,7 @@ export default function Hero() {
           Software engineering student navigating the world of code and design. 『••✎••』
           <br />
           <br />
-           Currently Software Engineering Intern at RBC. Previously Web Dev Lead for McMaster iGEM. Experienced with UI/UX design, Site Reliability Engineering, Dev Ops. 
+           Currently Software Engineering Intern at RBC. Previously Web Dev Lead for McMaster iGEM. Experienced with UI/UX design, Site Reliability Engineering and Dev Ops. 
         </div>
 
         {/* <Link href={"mailto:laiv3@mcmaster.ca"} className="inline-block">
