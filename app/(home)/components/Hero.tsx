@@ -1,13 +1,10 @@
-import { MovingBorderBtn } from '@/components/ui/moving-border';
-import Typewriter from "@/components/ui/typewriter"
 import Link from 'next/link';
 import React from 'react';
-import Title from './Title';
 import Graphic from './Graphic';
 
 export default function Hero() {
   return (
-    <div className="min-h-[60vh] flex flex-col-reverse lg:flex-row items-center justify-between p-5 gap-20" animation-move-up>
+    <div className="min-h-[60vh] flex flex-col-reverse lg:flex-row items-center justify-between p-5 gap-20 animate-move-up">
       {/* Left Section */}
       <div className="space-y-10 text-left lg:w-3/5">
         <h1 className="text-3xl lg:text-6xl font-bold">

@@ -23,9 +23,9 @@ export default function Projects() {
             background: "bg-indigo-100"
         },
         {
-            title: "E-Commerce Platform (BizConnect)",
+            title: "BizConnect - DeltaHacks 1st place",
             tech: [SiFigma, SiFirebase, SiPython, SiSqlite],
-            link: "https://www.figma.com/proto/r8Yj9P3CbFHpJAlNh3wq8k/RBC-BizConnect?node-id=104-79&starting-point-node-id=104%3A79&mode=design&t=QMdPKcNWPvXRnwyo-1",
+            link: "https://devpost.com/software/rbc-bizconnect",
             cover: "/BizConnect.png",
             background: "bg-indigo-100"
         },
@@ -46,7 +46,7 @@ export default function Projects() {
         
     ];
     return (
-        <div className="py-10 p-5 sm:p-0">
+        <div className="py-10 p-5 sm:p-0 m-20">
             <Title text="Projects ⚒️" className="flex flex-col items-center justify-center" />
             <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 pt-20 gap-5">
                 {projects.map((project, index) => (
