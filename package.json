@@ -9,8 +9,8 @@
     "lint": "next lint",
     "export": "next build",
     "build:export": "next build",
-    "deploy": "gh-pages -d out -t true",
-    "static": "next build && next export && touch ./out/.nojekyll && echo 'https://vanessa-laii.github.io/' > ./out/CNAME",
+    "deploy": "gh-pages -d out",
+    "static": "next build && powershell New-Item -Path './out/.nojekyll' -ItemType File -Force && powershell \"'https://vanessa-laii.github.io/' | Out-File -FilePath './out/CNAME' -Encoding ASCII\""
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.13",
