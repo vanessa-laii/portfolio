@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "build:export": "next build && next export",
+    "export": "next build",
+    "build:export": "next build",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {

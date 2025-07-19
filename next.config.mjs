@@ -5,7 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // No basePath needed because the repo is yourusername.github.io
 };
 
 export default nextConfig;
