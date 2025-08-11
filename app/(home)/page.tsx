@@ -2,25 +2,21 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
-import Skills from './components/Projects';
-import Projects from './components/Temp'
 import Footer from './components/Footer';
-import Experience from './components/Experience';
 
 const Page = () => {
   return (
-    <div>
-          <div className="max-w-full px-10"> 
-            <Navbar />
-            <div className=" max-w-7xl mx-auto p-5 mt-20">
-              <Hero />
-              <Experience />
-              <Projects />
-              <Footer />
-            </div>
+    <div className="min-h-screen flex flex-col">
+      <div className="max-w-full flex-1"> 
+        <Navbar />
+        <div className="pt-48 px-10 flex-1">
+          <div className="max-w-7xl mx-auto p-5">
+            <Hero />
           </div>
+        </div>
+      </div>
+      <Footer />
     </div>
-
   );
 }
 

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Graphic from './Graphic';
+import Title from './Title';
 
 export default function Hero() {
   return (
@@ -17,12 +18,12 @@ export default function Hero() {
           Software engineering student navigating the world of code and design. 『••✎••』
           <br />
           <br />
-           Currently Software Engineering Intern at RBC. Previously Web Dev Lead for McMaster iGEM. Experienced with UI/UX design, Site Reliability Engineering and Dev Ops. 
-        </div>
+          I love to explore Hamilton for cozy coffee shops or bustling restaurants. I&apos;ve documented my favourite spots on my <Link href="/blog" className="text-purple-300 hover:font-semibold">Blog</Link> page!
+          </div>
 
-        {/* <Link href={"mailto:laiv3@mcmaster.ca"} className="inline-block">
+        <Link href={"mailto:laiv3@mcmaster.ca"} className="inline-block">
           <Title text="Let's chat! 📨" />
-        </Link> */}
+        </Link>
       </div>
 
       {/* Vertical Divider */}
